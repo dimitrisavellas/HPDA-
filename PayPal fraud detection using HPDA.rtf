@@ -1,0 +1,96 @@
+{\rtf1\ansi\ansicpg1253\cocoartf2822
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fnil\fcharset0 HelveticaNeue;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;\red255\green255\blue255;\red227\green227\blue220;
+\red0\green0\blue0;\red184\green188\blue185;\red19\green20\blue20;\red185\green188\blue185;\red185\green188\blue186;
+\red19\green20\blue20;\red226\green227\blue220;\red255\green255\blue255;\red227\green227\blue220;\red0\green0\blue0;
+\red185\green188\blue184;}
+{\*\expandedcolortbl;;\cssrgb\c0\c1\c1;\cssrgb\c100000\c100000\c99985\c0;\cssrgb\c91159\c91155\c88968;
+\cssrgb\c0\c0\c0;\cssrgb\c77227\c78403\c77424;\cssrgb\c9803\c10196\c10183;\cssrgb\c77241\c78417\c77536;\cssrgb\c77255\c78431\c77647;
+\cssrgb\c9804\c10196\c10196;\cssrgb\c90980\c90980\c89020;\cssrgb\c100000\c100000\c100000\c0;\cssrgb\c91247\c91242\c88940;\cssrgb\c0\c1\c1;
+\cssrgb\c77277\c78454\c77181;}
+{\*\listtable{\list\listtemplateid1\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid1\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid1}
+{\list\listtemplateid2\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid101\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid2}
+{\list\listtemplateid3\listhybrid{\listlevel\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{decimal\}}{\leveltext\leveltemplateid201\'01\'00;}{\levelnumbers\'01;}\fi-360\li720\lin720 }{\listname ;}\listid3}}
+{\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}{\listoverride\listid2\listoverridecount0\ls2}{\listoverride\listid3\listoverridecount0\ls3}}
+\paperw11900\paperh16840\margl1440\margr1440\vieww28900\viewh18080\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 One recent High Performance Data Analytics use case from the industry that gathered a lot of interest in the around the word is the the implementation of 
+\f1 \cf2 \cb3 \expnd0\expndtw0\kerning0
+an HPDA system for real-time fraud detection across millions of daily transactions, successfully done by PayPal. \
+
+\f0 \cf5 \cb1 \kerning1\expnd0\expndtw0 While internet commerce has become a vital part of the economy, detecting fraud in \'91real time\'92 as millions of\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf5 transactions are captured and processed by an assortment of systems \'96 many having proprietary software\
+tools \'96 has created a need to develop and deploy new fraud detection models. PayPal, an eBay company, has used Hadoop and other software tools to detect fraud, but the colossal volumes of data were so large their systems were unable to perform the analysis quickly enough. To meet the challenge of finding fraud in near real time, PayPal decided to use HPC class systems \'96 including the Lustre file system on their Hadoop cluster.\
+The result? In their first year of production PayPal saved over $700 million in fraudulent transactions that thy\
+would not have detected previously. [{\field{\*\fldinst{HYPERLINK "https://www.intel.com/content/dam/www/public/us/en/documents/white-papers/big-data-meets-high-performance-computing-white-paper.pdf"}}{\fldrslt https://www.intel.com/content/dam/www/public/us/en/documents/white-papers/big-data-meets-high-performance-computing-white-paper.pdf}}]\
+\pard\pardeftab720\partightenfactor0
+
+\f1\fs28 \cf5 \cb3 \expnd0\expndtw0\kerning0
+\
+Core Infrastructure & Scale\cb7 \
+\cf9 \cb10 \
+
+\fs24 \cf2 \cb3 PayPal's fraud detection system manages 74 petabytes of total storage with a 32% annual storage growth rate. [{\field{\*\fldinst{HYPERLINK "https://www.slideshare.net/slideshow/big-data-fast-data-paypal-yow-2018/126923757"}}{\fldrslt https://www.slideshare.net/slideshow/big-data-fast-data-paypal-yow-2018/126923757}}]The infrastructure processes 20 terabytes of log data collected daily and operates over 2,000 database instances handling 116 billion database calls per day. The system processes 41 million transactions per day, scaling up from 7.8 billion payment transactions annually in 2018. PayPal serves 400 million consumer accounts and 20 million merchant accounts across 200+ markets and currencies, processing a global transaction volume of $1.53 trillion in 2023.[{\field{\*\fldinst{HYPERLINK "https://helplama.com/paypal-revenue-users-statistics/"}}{\fldrslt https://helplama.com/paypal-revenue-users-statistics/}},{\field{\*\fldinst{HYPERLINK "https://www.oberlo.com/statistics/us-paypal-transaction-volume"}}{\fldrslt https://www.oberlo.com/statistics/us-paypal-transaction-volume}}]. \cf5 \cb3 Current Prevention stands for $500 million blocked in fraud per quarter.[{\field{\*\fldinst{HYPERLINK "https://chiefaiofficer.com/blog/how-paypals-ai-blocks-500-million-in-fraud-per-quarter/"}}{\fldrslt https://chiefaiofficer.com/blog/how-paypals-ai-blocks-500-million-in-fraud-per-quarter/}}] \
+\pard\pardeftab720\partightenfactor0
+
+\fs28 \cf2 \cb3 Technical Architecture of PayPal's Fraud Detection System\
+\
+
+\fs24 PayPal's real-time fraud detection infrastructure is built on a sophisticated combination of big data and high-performance computing technologies designed to process massive transaction volumes with minimal latency. The system employs a Hadoop cluster configured with HBase for distributed data storage, enabling efficient management of petabyte-scale datasets across multiple nodes. This foundation provides the scalability and fault tolerance required for continuous operation across PayPal's global payment network.[{\field{\*\fldinst{HYPERLINK "https://intellipaat.com/blog/paypal-leverages-big-data-analytics/"}}{\fldrslt https://intellipaat.com/blog/paypal-leverages-big-data-analytics/}}]\
+\
+The processing layer utilizes a Lustre parallel file system running on top of Hadoop, combined with HPC-class infrastructure and high-speed InfiniBand interconnects. This architecture enables extremely fast data access and communication between compute nodes, which is critical for maintaining the millisecond-level latency requirements of real-time fraud detection. The InfiniBand interconnects provide low-latency, high-bandwidth communication that significantly outperforms standard Ethernet networks, allowing the system to process fraud detection queries across thousands of transactions simultaneously without performance degradation.\
+\
+For analytics and real-time streaming, PayPal leverages the Kraken analytics platform alongside Kafka for streaming data pipelines. Kafka enables the continuous ingestion of transaction data from multiple sources, while Kraken provides the analytics capabilities to derive insights and detect fraudulent patterns in real-time. This combination allows PayPal to process event streams of millions of transactions per day and apply complex fraud detection rules instantaneously.[{\field{\*\fldinst{HYPERLINK "https://www.vamsitalkstech.com/architecture/hadoop-counters-credit-card-fraud-23/"}}{\fldrslt https://www.vamsitalkstech.com/architecture/hadoop-counters-credit-card-fraud-23/}}]\
+\
+The core database infrastructure consists of 2,000 Aerospike servers, including 200 high-density servers equipped with Intel Optane Persistent Memory. These Aerospike servers manage 100 petabytes of historical transaction and customer behavior data that inform fraud detection decisions.[{\field{\*\fldinst{HYPERLINK "https://pages.aerospike.com/rs/229-XUE-318/images/Aerospike_Case_Study_PayPal_Intel.pdf"}}{\fldrslt https://pages.aerospike.com/rs/229-XUE-318/images/Aerospike_Case_Study_PayPal_Intel.pdf}}].\
+\pard\pardeftab720\sa160\partightenfactor0
+
+\fs32 \cf5 \cb3 \
+Machine Learning Algorithms\cf11 \cb1 \
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sa160\partightenfactor0
+\ls1\ilvl0
+\fs24 \cf5 \cb12 \kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+Algorithm Types: Neural Networks, Deep Learning, and Linear Regression \
+\ls1\ilvl0\kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+Data Analysis: Thousands of data points including IP address, buying history, merchant activity, cookie information, device characteristics, geographic location, behavioral indicators\
+\pard\tx720\pardeftab720\sa160\partightenfactor0
+\cf14 \cb3 \
+\pard\pardeftab720\sa160\partightenfactor0
+
+\fs32 \cf5 \cb12 Workflow Characteristics\cf11 \cb1 \
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sa160\partightenfactor0
+\ls2\ilvl0
+\fs24 \cf5 \cb12 \kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+Continuous Operation: 24/7 real-time processing\
+\ls2\ilvl0\kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+Human Review: Suspicious transactions flagged for hybrid automated and human expert scrutiny \
+\ls2\ilvl0\kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+Adaptive Learning: Models update continuously based on new fraud patterns\
+\pard\pardeftab720\sa160\partightenfactor0
+
+\fs32 \cf5 \
+How the 5V Big Data Challenges Apply?\cf11 \cb1 \
+
+\fs24 \cf5 \cb12 Volume: Manages 100 petabytes across infrastructure with 32% annual growth rate. Processes 41 million daily transactions generating 20+ terabytes of log data daily.\
+Velocity: Real-time processing with millisecond-level fraud detection on 41 million daily transactions. System handles 116 billion database calls per day, requiring near-instantaneous decisions to prevent fraud before transaction completion.\
+Variety: Heterogeneous data from "an assortment of systems \'96 many having proprietary software tools", including structured transaction records, semi-structured logs, unstructured behavioral data, device fingerprints, network logs spanning 200+ markets and currencies.\
+Veracity: 50% reduction in false positives while maintaining fraud detection effectiveness. Hybrid system combines machine learning (Neural Networks, Deep Learning, Linear Regression) with human detective verification to ensure accuracy. \
+Value: Directly quantifiable at $700 million fraud prevented in first year, now $500 million prevented quarterly. Enables PayPal to maintain trust across $1.53 trillion annual transaction volume\
+\
+
+\fs32 Primary Citations:\cf11 \cb1 \
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sa160\partightenfactor0
+\ls3\ilvl0
+\fs24 \cf5 \cb12 \kerning1\expnd0\expndtw0 {\listtext	1	}\expnd0\expndtw0\kerning0
+SlideShare YOW 2018: "Big Data, Fast Data @ PayPal" - Infrastructure metrics \
+\ls3\ilvl0\kerning1\expnd0\expndtw0 {\listtext	2	}\expnd0\expndtw0\kerning0
+Intel White Paper 2014: "Big Data Meets High Performance Computing" - Original case study \
+\ls3\ilvl0\kerning1\expnd0\expndtw0 {\listtext	3	}\expnd0\expndtw0\kerning0
+Intel/Aerospike Case Study 2020: "PayPal Solves Fraud Challenges with Aerospike and Intel Optane PMem" \
+\ls3\ilvl0\kerning1\expnd0\expndtw0 {\listtext	4	}\expnd0\expndtw0\kerning0
+Various industry sources 2024-2025: Current performance metrics \cf14 \cb3 \
+\pard\pardeftab720\partightenfactor0
+\cf2 \cb3 \
+}
