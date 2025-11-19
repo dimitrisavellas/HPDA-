@@ -1,0 +1,55 @@
+#Bash commands                                                       
+
+1. $ echo "Hello World". --> Prints "Hello World" exactly as written inside the quotes
+2. $ echo Hello, World. -->  Prints Hello, World
+3. $ echo Hello, world; Foo bar --> Output: Hello, world then error bash: Foo: command not found because 
+   it is a fake command we found out that with ; you can write two commands in one line 
+4. $ echo Hello, world! -->  Output: Hello, world!
+5. $ echo "line one";echo "line two" --> Output: line one on first line, line two on second line
+6. $ echo "Hello, world > readme" --> Output: Hello, world > readme (printed to screen)
+7. $ echo "Hello, world" > readme --> No output (created/wrote to file)
+8. $ cat readme --> Output: Hello, world
+9. $ example="Hello, World" --> stored value
+10. $ echo $example --> Output: Hello, World
+11. $ echo ’$example’ --> tries to print $example literally 
+12. $ echo "$example" --> Output: Hello, World
+13. $ echo "Please enter your name."; read example --> Printed prompt, I typed Dimitris Avellas
+14. $ echo "Hello $example" --> Output: Hello Dimitris Avellas 
+15. $ three=1+1+1;echo $three --> Output: 1+1+1
+16. $ bc--> goes to calculator to exit type quit 
+17. $ echo 1+1+1 | bc --> Output 3 because it calls the calculator 
+18. $ let three=1+1+1;echo $three --> Output: 3
+19. $ echo date --> Output: date
+20. $ cal --> Displayed November 2025 calendar 
+21. $ which cal --> Output: /usr/bin/cal location of my calendar 
+22. $ usr/bin/cal --> Displayed November 2025 calendar
+23. $ $(which cal) --> Displayed November 2025 calendar
+24. $ ‘which cal‘ -->  Error: bash: 'which: command not found'
+25. $ echo "The date is $(date)" --> Output: The date is Τετ 19 Νοε 2025 19:26:00 CET
+26. $ seq 0 9 --> Output: numbers 0 through 9, each on separate line
+27. $ seq 0 9 | wc -l --> Output: 10 (seq 0 9 generates 10 numbers (0,1,2,3,4,5,6,7,8,9), each on its own line​
+                        The pipe | takes that output and sends it as input to the next command ​
+                        wc -l counts how many lines it receives​
+                        Result: 10 lines = output of 10)
+28. $ seq 0 9 > sequence --> No output (wrote to file) 'The > redirects output to a file instead of the screen'
+29. $ wc -l < sequence --> Output: 10 < sequence reads the contents of the "sequence" file and sends 
+        it as input to wc -l​
+        wc -l counts the lines in that file
+30. $ for I in $(seq 1 9) ; do echo $I ; done --> Output: numbers 1 through 9, each on separate line
+What happened: Printed numbers 1 through 9, each on separate line
+What it does: A for-loop that repeats an action for each item in a list:​
+$(seq 1 9) generates the list of numbers 1 through 9​
+for I in ... takes each number and puts it in variable I, one at a time​
+do echo $I prints the current value of I​
+done ends the loop​
+So it loops 9 times, each time printing the current number.​
+
+31. $ (echo -n 0 ; for I in $(seq 1 9) ; do echo -n +$I ; done ; echo) | bc --> Output: 45
+What it does: This builds a math expression and calculates it:​
+( ... ) groups multiple commands together as one unit​
+echo -n 0 prints "0" without a newline (-n means no newline)​
+The for-loop prints "+1", "+2", "+3", ... "+9", all without newlines​
+Final echo adds a newline at the end​
+Result: creates the text "0+1+2+3+4+5+6+7+8+9"​
+| bc pipes that text to the calculator ​
+bc calculates 0+1+2+3+4+5+6+7+8+9 = 45
