@@ -1,0 +1,30 @@
+demetresabellas@MacBook-Air-Demetres exercise1 % python3 csv.py "NVDA Ιστορικά Δεδομένα.csv"
+
+Mean of column 1: 122.83466135458167
+Mean of column 2: 48.87051792828685
+Mean of column 3: 122.87450199203187
+Mean of column 4: 47.06374501992032
+Mean of column 5: 124.89641434262948
+Mean of column 6: 49.440239043824704
+Mean of column 7: 120.54581673306772
+Mean of column 8: 47.06374501992032
+Mean of column 9: 308.76693227091636
+Mean of column 10: 48.56686626746507
+Mean of column 11: 0.26294820717131473
+Mean of column 12: 48.99203187250996
+demetresabellas@MacBook-Air-Demetres exercise1 % time python3 csv.py "NVDA Ιστορικά Δεδομένα.csv"
+
+Mean of column 1: 122.83466135458167
+Mean of column 2: 48.87051792828685
+Mean of column 3: 122.87450199203187
+Mean of column 4: 47.06374501992032
+Mean of column 5: 124.89641434262948
+Mean of column 6: 49.440239043824704
+Mean of column 7: 120.54581673306772
+Mean of column 8: 47.06374501992032
+Mean of column 9: 308.76693227091636
+Mean of column 10: 48.56686626746507
+Mean of column 11: 0.26294820717131473
+Mean of column 12: 48.99203187250996
+python3 csv.py "NVDA Ιστορικά Δεδομένα.csv"  0.02s user 0.01s system 86% cpu 0.039 total
+
